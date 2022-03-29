@@ -1,0 +1,204 @@
+<!-- Le doctype permet de savoir quelle version de html est utilisée sur la page-->
+<!doctype html>
+<html lang="fr">
+
+
+    <!-- en tete de la page -->
+    <head>
+        <title> BD</title>
+        <!-- modifier l'encodage de caractère de la page  -->
+        <meta charset="utf-8"/>
+        <!-- chargement d'une police google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <!-- chargement de notre feuille de style-->
+
+        <link rel="stylesheet" href="css/main.css"/>
+        <!-- pour que la taille des images soient adaptés à la taille de la fenêtre -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+
+
+
+
+    
+    <!-- corps de la page  -->
+    <body>
+        <!-- lien
+<a href="http://google.fr" target="_blank">là t'as google</a>-->
+        <header>
+            <div class="container">
+                <a href="index.html" id="brand">Accueil</a>
+
+                <!-- listes à puces /liste non ordonée -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.deviantart.com/thomtails">ma page deviantart</a>
+                        </li>
+                        <li> <a href="#contact">comment me contacter</a>
+                        </li>
+                        <li> <a href="https://www.deviantart.com/thomtails/gallery/67427641/bd-robot-ch-tit">BD</a>
+                        </li>
+                        <li> <a href="https://www.deviantart.com/thomtails/gallery/all">mes dessins</a>
+                        </li>
+                        <li> <a href="https://www.youtube.com/channel/UC5aIircPqkJ-JpT9JYEnK5A">chaine youtube</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- on place le clearfix après l'élément flottant et ava,t la fermeture du conteneur-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+
+        <main>
+            <!-- l'attribut ud permet de cibler de manière précise un élément unique car la valeur donnée à l'attribut id devra être unique dans toute la page -->
+            <div id="presentation"> 
+                <!-- l'attribution class permet de cibler en css un élément de manière plus précise qu'avec un élément html. la classe présente l'avantage de pouvoir être réutilisé par rapport à l'id-->
+                <div class="container">  
+                    <div> <h1> Bienvenue dans le nord  </h1></div>
+                    <div><p>*toutes les images sont faites par le créateur de la page</p></div>
+                </div>
+            </div> 
+
+            <div id= "personnages">
+                <div class="container">
+
+                    <h2> les plus presents</h2>
+                    <div class= "element">
+                        <h3>π-man</h3>
+                        <img src="img/details/pi-9.png">
+                        <p> π est un robot de réduction des dechets , il est le plus connu des 8 androids  </p>
+                        <a href="R-Chtis/Pi.html">info</a>
+                    </div>
+
+                    <div class= "element">
+                        <h3>Pans-man</h3>
+                        <img src="img/pans-9.png">
+                        <p> pans est robot infermier , le plus serieux et terre à terre parmis ses frêres   </p>
+                        <a href="R-Chtis/pans.html">info</a>
+                    </div>
+
+                    <div class= "element">
+                        <h3>total-man</h3>
+                        <img src="img/total-9.png">
+                        <p> Total est essentiel à l'équipe , surement le moins sérieux aussi. Ironiquement son travail est de dépolluer </p>
+                        <a href="">info</a>
+                    </div>
+                    <div class= "element">
+                        <h3>DrThéodore Hôbouleau</h3>
+                        <img src="img/th-8.png">
+                        <p> il est le créateur de tous ces androids , innovateur dans le domaine de l'intelligence artificielle.... c'est quand même un gros fénéant</p>
+                        <a href="">info</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div id= "bd">
+                <div class="container">
+                    <h2> Bandes dessinees</h2>
+                    <div class="element">
+
+                        <div class="media">
+                            <iframe src="https://www.youtube.com/embed/b9_lhcwFCtE?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p> speedpaint de π et Total</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/r2AnMQHmtSM?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <p> speedpaint de Pans-Man en pleine action</p>
+                        </div>
+                        <div class="media-detail">
+                            <p> d'autres arrivent bietot</p>
+
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </main>
+
+        <div id="pour-patienter">
+            <!-- charger et afficher la vidéo stockée dans le dossier vid-->
+            <video autoplay muted loop>
+                <source src="vid/classic-sonic.mp4" type="video/mp4"/>
+            </video>
+            <div class="container">
+                <h2> bd a venir</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>nom de l'histoire</th>
+                            <th>avancement</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                    <tr>
+                        <td> "code de language"</td>
+                        <td> noir et blanc non repassé</td>
+                    </tr>
+                </table>    
+            </div>
+            <p> <a href ="PR/PR.html"/> Projet Password reseau </P></P> </a> </p> 
+            <a href ="/PR/PR.html"/>  <img src="img\password_reseau\logo1.png"/></a> 
+
+            <div id="contact">
+                <div class="element">
+                    <h2> contactez moi</h2>
+
+                    <!-- le formulaire-->
+                    <form>
+                        <div class="form-group">
+                            <label for= "labelfirstname" id="labelFirstname"/> votre prénom <label/>
+                            <input type="text" id="labelFirstname"/>
+                        </div>
+
+
+                        <div class="contacter">
+                            <label for="email" id="LabelEmail"/> votre email <label/>
+                            <input type="email" id="labelEmail"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="labelObjet"> objet de la demande</label>
+                            <!-- liste déroulante-->
+                            <select id="labelObjet">
+                                <option>questions</option>
+                                <option>idée a partager</option>
+                                <option>des fanart a envoyer</option>
+								<option> partage </option>
+                                <option>autre message</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <!-- zone de texte multiligne-->
+                            <label for="labelMessage"> votre message</label>
+                            <textarea id="labelMessage"> </textarea>
+                        </div>
+                        <input type="submit" value="envoyer"/>
+                    </form>
+                </div>
+                <div class="element">
+                <h2> ThomTails</h2>
+                <!--integrer une carte gMaps-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1671660.3082222492!2d-2.9961273130447412!3d49.81566699811187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ddb401943e13a9%3A0x2a0af13ef63531e0!2sManche+(mer)!5e1!3m2!1sfr!2sfr!4v1535719995813" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="clearfix">  </div>
+            </div>
+        </div>
+
+
+        <!-- balise pour afficher un paragraphe de texte-->
+
+        <!-- <main> contenu principal de la page , une seule balise main par page-->
+        <!-- titre pricipal de la page (un seul par page) -->
+        <!-- <header> en-tête de page 
+<footer> = pied de page
+<nav> conteneur d'un menu de navigation
+<figure> conteneur de média (image , vidéo)-->
+    </body>
+
+</html>

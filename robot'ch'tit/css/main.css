@@ -1,0 +1,316 @@
+/* Zone de commentaire
+la syntaxe de base de la css 
+composée de 3éléments :
+-le sélecteur : sur quel élément souhaite t'on appliquer ou une mise en forme 
+-la propriété : l'effet que l'on veut donner (couleur, taille du texte, ....)
+- la valeur CSS (rouge)
+
+selecteur {
+propriete1: valeur;
+propriete2: valeur;
+}*/
+/*chargement de la police*/
+
+@font-face {
+    font-family: 'SEGA';
+    src: url('../fonts/SEGA.eot?#iefix') format('embedded-opentype'),  url('../fonts/SEGA.woff') format('woff'), url('../fonts/SEGA.ttf')  format('truetype'), url('../fonts/SEGA.svg#SEGA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/***************************
+styles en commun
+***************************/
+*{ /* faire en sorte que le padding et la bordure soient calculés à l'interieur du conteneur. on change le mode de calcul à l'aide du box-sizing*/
+    box-sizing: border-box;}
+body {
+    /* appliquer la police sous l'ensemble de la page*/
+    font-family: 'Indie Flower', cursive;
+    margin: 0}
+
+h2{ color:blue;
+    font-family: 'SEGA';
+    margin: 0;
+    padding: 10px;
+    border-top : 2px solid red;
+    border-bottom : 2px solid red;
+    border-left : 2px solid red;
+    border-right :2px solid red;
+    font-size: 36px;
+    text-align: center;
+}
+
+/******************************
+Header
+******************************/
+header{
+    background-color:#a2a2a2ab;}
+nav ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+nav{
+    /*mettre le menu en flottant à droite*/
+    float: right
+}
+
+#brand { 
+    font-size: 36px;
+    color: darkred;
+    /* appliquer la poilice chargée dans le @font-face*/
+    font-family: 'SEGA';
+    text-decoration: none;
+    border-top : 2px solid red;
+    border-bottom : 2px solid red;
+    border-left : 2px dashed red;
+    border-right :2px dashed red;}
+
+
+/* on utilise un selecteur plus précis pour être certain que les styles ne s'appliquent qu'aux liens de ce menu */  
+nav ul li a{
+    color: green;
+    /*enlever le soulignement*/
+    text-decoration: none;
+    /* bordures
+    border : taille style couleur; 
+    pour le style on a les valeurs suivantes 
+    -solid : trait simple
+    -dotted : pointillés
+    -dashed : tirets */
+    border-top : 2px dashed green;
+    border-bottom : 2px solid green;
+    border-left : 2px dashed green;
+    border-right :2px dashed green;
+    /* on peux mettre border-top ou  bottom pour les bordures du haut et du bas*/
+}
+
+/* appliquer des styles uniquement au survol des menus */
+nav ul li a:hover { 
+    border: 0;
+}
+/******************************
+presentation
+******************************/
+
+/* les selecteurs de classe, le point permet de cibler une classe */
+.container{
+    /* pour changer la largeur d'un conteneur*/
+    max-width:1100px; 
+    /* centrer un bloc*/
+    margin: 0 auto;
+    padding: 50px 0
+
+}
+
+header .container{
+    padding: 0
+}
+/* les sélecteurs d'id 
+le # permet de cibler un id */ 
+
+.clearfix{
+    clear: both;
+}
+#presentation {
+    /* ajouter un fond imagé*/
+    /*background-image: url("../img/perfect.png");*/
+    /*ajouter un fond imagé avec un dégradé*/
+    background-image: linear-gradient(to bottom,rgba(255,255,255,0) 95%,rgba(255,255,255,1) 100%), url("../img/perfect.png");
+    /* ajouter des marges interieures*/
+    padding-top:400px;
+    padding-bottom:150px;
+    /* modifier la taille du background*/
+    background-size: cover;
+    /* la valeur cover permet au mieux de remlir au mieux le conteneur verticalement et horizontalement de l'image et permet d'éviter une répétition si l'image est trop petite*/
+
+    /*se déplacer dans l'image du fond avec deux valeur ,la première pour l'axe X et la seconnde pour l'axe Y*/
+    background-position: center;
+
+
+
+}
+
+/* les selecteurs d'éléments HTML */
+h1{
+    color:blue;
+    /*mettre le texte en maj*/ 
+    text-transform:uppercase;
+    font-size: 60px;
+    font-family: 'SEGA';
+    background-color: #ae3ec14d;
+    /* supprimer la marge par défaut */
+    margin:0;
+    padding: 10px;
+    /*ajouter une ombre portée*/
+    box-shadow: 0 -5px 30px #219225ba;
+    /*changer le comportement d'affichage*/
+
+}   
+
+#presentation p{
+    /* changer la couleur*/
+    color:#1d9e15;
+    /*changer la taille de police*/ 
+    font-size: 24px;
+    /*ajouter un fond coloré*/
+    background-color :#d6cfcfab;
+    margin:0;
+    /*on applique une marge interieur pour que le texte ne soit pas collé au bord du conteneur*/
+    padding: 10px;
+    box-shadow: 0 5px 30px #f44336bf;
+
+}
+
+/**********************
+personnages
+**********************/
+
+.element{
+    /*mettre les uns à coté des autres*/
+    float: left;
+    /* mettre en flottant ne suffit pas à mettre des blocs les uns a coté des autres si une taille n'est pas définie*/
+    width: 25%;
+    text-align: : center;
+    padding: 10px;
+    
+}
+/***********
+interaction avec les images
+***********/
+}
+.element img {
+    /*width: 100%;*/
+    /*faire interagir les images avec la souris*/
+    div:hover {
+        width: 100px;
+        height:100px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+
+/**************************************************/
+/**************************************************/
+}
+.element a { 
+    color:darkslategrey;
+    text-decoration: none;
+    padding:2px 10px;
+    border:2px dashed #000094;
+    border-radius: 45%;
+    margin: 10px;
+}
+
+/***********************
+BD
+***********************/
+#bd {
+    background-color: #69696947;
+    color: red;
+    font-size: 36px;
+    box-shadow: 0 -5px 30px grey;
+}
+
+#bd .element {
+    width: 50%;}
+.media iframe{
+    width: 100%;
+    padding-right: 10px;
+}
+
+
+
+/*ajouter des bords arondis*/
+
+/***********************
+A venir
+***********************/
+table {
+    border: 5px solid #ed1c24;
+    width: 50%;
+    /*centrer un bolc*/
+    margin: 0 auto;
+    background-color: white
+}
+table td, table th{ 
+    padding: 5px 0;}
+/* pour centrer le texte des colones*/
+
+table th {
+    border-bottom: 1px solid #ed1c24;
+}
+table td{ 
+    text-align: center;}
+
+#pour-patienter video { 
+    width: 100%;
+}
+
+/* pour faire une iteraction avec les images des personnages*/
+
+
+
+
+/* la propriété position
+4 valeurs : 
+
+-static : valeur par défaut de tous les éléments.
+un élément dit static est un élément non positionné
+un élément avec la propiété position avec une valeur autre que static est un élément positioné 
+
+-relative : se comporte quasiment de la même façon que static sauf que l'élément est positionné. On dispose des propriété top right left bottom pour positionner l'élément à un autre endroit que la position initiale.
+
+-fixed :un élément positionné par rapport à la fenêtre du navigateur. Cet élément reste toujours à la même plâce même si la page défile
+
+-absolute : se comporte comme fixed sauf que son positionnement ne se fait pas par rapport à la fenètre du navigateur mais son positionnement est relatif à l'élément parent positionné le plus proche */
+#pour-patienter {
+    /*le simple ajout de position :relative;  permet d'indiquer à l'élément portant la classe container de se positionner par rapport à lui*/
+    position: relative;
+    height: : 400px;
+    /*masquer /cacher ce qui déborde du conteneur*/
+    overflow: hidden;
+}
+#pour-patienter .container {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    /* mettre left:0 et right:0; peux parraitre troublant pour autant il permet de donner une largeur de 100% à l'élément*/
+    background-image: linear-gradient(to bottom, rgba(0, 128, 0, 1) 10%,rgba(0, 128, 0, 0) 100%) ;
+    margin:0;
+    max-width: 100%
+}
+#pour-patienter video {
+    /* ajouter une marge négfative pour palier aux bandes noires de la vidéo*/
+    margin-top: -92
+} 
+#pour-patienter h2{
+}
+
+/**************************
+CONTACT
+**************************/
+#contact .element {
+    width: 50%;
+        
+}
+#contact iframe {
+    width: 100%;
+        min-height:380px;
+}
+#contact form{
+    padding : 0 25px;
+}
+#contact input, #contact select, #contact textarea {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 500px;
+    box-shadow: yes;
+    border:  1px solid green;
+}
+form-group{
+    padding: 10px 0;
+}
+
